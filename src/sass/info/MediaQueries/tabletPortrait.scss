@@ -1,0 +1,59 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  //    @import '../mobile';
+  & {
+    header,
+    footer,
+    main {
+      overflow: hidden;
+    }
+    .head-content {
+      padding: 0;
+      background: none;
+    }
+    .head-content .border {
+      display: none;
+    }
+    .info-item {
+      padding-left: 0;
+    }
+    .info-block .item {
+      max-width: 355px;
+      padding: 15px;
+      background-size: cover;
+      br {
+        display: none;
+      }
+    }
+    .info-block .item h4 {
+      font-size: 20px;
+    }
+    .box_info h2 {
+      text-align: center; 
+      br {
+        display: none;
+      }
+    }
+    .reviews h2 {
+      font-size: 18px;
+    }
+    .registration-btn {
+      text-align: center;
+    }
+    .programs .programs-items .item h3 {
+      font-size: 25px;
+    }
+    .item-portait {
+      display: inline-block;
+      max-width: 49%;
+      vertical-align: top;
+      width: 100%;
+    }
+    .price-block .price-item {
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+}
